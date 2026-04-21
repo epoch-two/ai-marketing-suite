@@ -1,50 +1,42 @@
 {
-  "name": "AI Marketing Suite",
-  "description": "A complete AI marketing workspace for business owners. Six plugins that work as a coordinated system — one setup wizard configures everything, five specialist tools activate automatically.",
-  "author": "Epoch Two",
-  "homepage": "https://github.com/epoch-two/ai-marketing-suite",
+  "name": "ai-marketing-suite",
+  "owner": {
+    "name": "Epoch Two",
+    "email": "rizza@epochtwo.com"
+  },
+  "metadata": {
+    "description": "A complete AI marketing workspace for business owners. Six plugins that work as a coordinated system — one setup wizard configures everything, five specialist tools activate automatically."
+  },
   "plugins": [
     {
-      "pluginId": "ai-marketing-setup",
-      "name": "AI Marketing Setup",
-      "description": "Onboarding wizard that interviews you about your business and generates a personalised Business Context Block. Run this first to configure all other AI Marketing Suite plugins.",
-      "configPath": "ai-marketing-setup/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "ai-marketing-setup",
+      "source": "./ai-marketing-setup",
+      "description": "Onboarding wizard that interviews you about your business and generates a personalised Business Context Block. Run this first to configure all other AI Marketing Suite plugins."
     },
     {
-      "pluginId": "email-strategist",
-      "name": "Email Strategist",
-      "description": "Senior email marketing specialist. Writes emails, sequences, subject lines, and content calendars in your voice, for your audience.",
-      "configPath": "email-strategist/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "email-strategist",
+      "source": "./email-strategist",
+      "description": "Senior email marketing specialist. Writes emails, sequences, subject lines, and content calendars in your voice, for your audience."
     },
     {
-      "pluginId": "ad-copy-writer",
-      "name": "Ad Copy Writer",
-      "description": "Direct-response ad copywriter. Writes Facebook, Instagram, Google, YouTube, and LinkedIn ads — hooks, variants, and landing page copy.",
-      "configPath": "ad-copy-writer/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "ad-copy-writer",
+      "source": "./ad-copy-writer",
+      "description": "Direct-response ad copywriter. Writes Facebook, Instagram, Google, YouTube, and LinkedIn ads — hooks, variants, and landing page copy."
     },
     {
-      "pluginId": "call-scripts",
-      "name": "Call Scripts",
-      "description": "Sales communication specialist. Writes call scripts, DM sequences, objection handlers, and follow-up messages for your team and channels.",
-      "configPath": "call-scripts/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "call-scripts",
+      "source": "./call-scripts",
+      "description": "Sales communication specialist. Writes call scripts, DM sequences, objection handlers, and follow-up messages for your team and channels."
     },
     {
-      "pluginId": "sop-builder",
-      "name": "SOP Builder",
-      "description": "Process documentation specialist. Turns rough descriptions into clean, step-by-step SOPs built around your confirmed tools, team, and workflows.",
-      "configPath": "sop-builder/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "sop-builder",
+      "source": "./sop-builder",
+      "description": "Process documentation specialist. Turns rough descriptions into clean, step-by-step SOPs built around your confirmed tools, team, and workflows."
     },
     {
-      "pluginId": "knowledge-base",
-      "name": "Knowledge Base",
-      "description": "Brand knowledge architect. Builds and audits brand voice guides, service descriptions, FAQs, and competitive positioning docs.",
-      "configPath": "knowledge-base/.claude-plugin/plugin.json",
-      "type": "skill"
+      "name": "knowledge-base",
+      "source": "./knowledge-base",
+      "description": "Brand knowledge architect. Builds and audits brand voice guides, service descriptions, FAQs, and competitive positioning docs."
     }
   ]
 }
