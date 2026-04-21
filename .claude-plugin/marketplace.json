@@ -1,38 +1,50 @@
 {
   "name": "AI Marketing Suite",
-  "description": "A complete AI marketing workspace for business owners — six plugins that work as a coordinated system. One setup wizard configures everything, five specialist tools activate automatically.",
+  "description": "A complete AI marketing workspace for business owners. Six plugins that work as a coordinated system — one setup wizard configures everything, five specialist tools activate automatically.",
   "author": "Epoch Two",
   "homepage": "https://github.com/epoch-two/ai-marketing-suite",
   "plugins": [
     {
+      "pluginId": "ai-marketing-setup",
       "name": "AI Marketing Setup",
-      "path": "ai-marketing-setup",
-      "description": "Onboarding wizard that interviews you about your business and generates a personalised Business Context Block. Run this first to configure all other AI Marketing Suite plugins."
+      "description": "Onboarding wizard that interviews you about your business and generates a personalised Business Context Block. Run this first to configure all other AI Marketing Suite plugins.",
+      "configPath": "ai-marketing-setup/.claude-plugin/plugin.json",
+      "type": "skill"
     },
     {
+      "pluginId": "email-strategist",
       "name": "Email Strategist",
-      "path": "email-strategist",
-      "description": "Senior email marketing specialist. Writes emails, sequences, subject lines, and content calendars in your voice, for your audience."
+      "description": "Senior email marketing specialist. Writes emails, sequences, subject lines, and content calendars in your voice, for your audience.",
+      "configPath": "email-strategist/.claude-plugin/plugin.json",
+      "type": "skill"
     },
     {
+      "pluginId": "ad-copy-writer",
       "name": "Ad Copy Writer",
-      "path": "ad-copy-writer",
-      "description": "Direct-response ad copywriter. Writes Facebook, Instagram, Google, YouTube, and LinkedIn ads — hooks, variants, and landing page copy."
+      "description": "Direct-response ad copywriter. Writes Facebook, Instagram, Google, YouTube, and LinkedIn ads — hooks, variants, and landing page copy.",
+      "configPath": "ad-copy-writer/.claude-plugin/plugin.json",
+      "type": "skill"
     },
     {
+      "pluginId": "call-scripts",
       "name": "Call Scripts",
-      "path": "call-scripts",
-      "description": "Sales communication specialist. Writes call scripts, DM sequences, objection handlers, and follow-up messages for your team and channels."
+      "description": "Sales communication specialist. Writes call scripts, DM sequences, objection handlers, and follow-up messages for your team and channels.",
+      "configPath": "call-scripts/.claude-plugin/plugin.json",
+      "type": "skill"
     },
     {
+      "pluginId": "sop-builder",
       "name": "SOP Builder",
-      "path": "sop-builder",
-      "description": "Process documentation specialist. Turns rough descriptions into clean, step-by-step SOPs built around your confirmed tools, team, and workflows."
+      "description": "Process documentation specialist. Turns rough descriptions into clean, step-by-step SOPs built around your confirmed tools, team, and workflows.",
+      "configPath": "sop-builder/.claude-plugin/plugin.json",
+      "type": "skill"
     },
     {
+      "pluginId": "knowledge-base",
       "name": "Knowledge Base",
-      "path": "knowledge-base",
-      "description": "Brand knowledge architect. Builds and audits brand voice guides, service descriptions, FAQs, and competitive positioning docs."
+      "description": "Brand knowledge architect. Builds and audits brand voice guides, service descriptions, FAQs, and competitive positioning docs.",
+      "configPath": "knowledge-base/.claude-plugin/plugin.json",
+      "type": "skill"
     }
   ]
 }
